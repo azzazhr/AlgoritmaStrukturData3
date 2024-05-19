@@ -10,4 +10,5 @@ public class Layanan07 {
         this.namaLayanan07 = namaLayanan07;
         this.harga07 = harga07;
     }
+
 }
