@@ -75,6 +75,7 @@ public class MainAntrianPelanggan07 {
                     scanner.close();
                     System.exit(0);
                 default:
+
             }
         }
     }
