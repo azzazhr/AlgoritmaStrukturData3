@@ -10,4 +10,5 @@ public class Node07 {
     Node07(Pelanggan07 data) {
         this.data = data;
     }
+
 }
