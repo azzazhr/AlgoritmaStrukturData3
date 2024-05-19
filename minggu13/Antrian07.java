@@ -12,4 +12,5 @@ public class Antrian07 {
         this.next = null;
         this.prev = null;
     }
+
 }
