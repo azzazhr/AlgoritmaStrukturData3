@@ -8,4 +8,5 @@ public class Pelanggan07 {
         this.nama07 = nama07;
         this.noHp07 = noHp07;
     }
+
 }
