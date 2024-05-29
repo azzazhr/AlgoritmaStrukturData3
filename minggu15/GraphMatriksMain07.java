@@ -14,5 +14,8 @@ public class GraphMatriksMain07 {
         System.out.println("Hasil setelah penghapusan edge");
         gdg.removeEdge(2, 1);
         gdg.printGraph();
+        System.out.println();
+        System.out.println("Degree, InDegree, dan OutDegree setiap vertex:");
+        gdg.printDegrees();
     }
 }
