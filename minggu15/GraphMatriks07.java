@@ -26,4 +26,44 @@ public class GraphMatriks07 {
         }
         System.out.println();
     }
+
+    public int getDegree(int vertexIndex) {
+        int degree = 0;
+        for (int i = 0; i < vertex; i++) {
+            if (matriks[vertexIndex][i] != 0) {
+                degree++;
+            }
+        }
+        return degree;
+    }
+
+    public int getInDegree(int v) {
+        int inDegree = 0;
+        for (int i = 0; i < vertex; i++) {
+            if (matriks[i][v] != 0) {
+                inDegree++;
+            }
+        }
+        return inDegree;
+    }
+
+    public int getOutDegree(int v) {
+        int outDegree = 0;
+        for (int i = 0; i < vertex; i++) {
+            if (matriks[v][i] != 0) {
+                outDegree++;
+            }
+        }
+        return outDegree;
+    }
+
+    public void printDegrees() {
+        for (int i = 0; i < vertex; i++) {
+            int degree = getDegree(i);
+            int inDegree = getInDegree(i);
+            int outDegree = getOutDegree(i);
+            System.out.println("Vertex " + (char) ('A' + i) + ": Degree = " + degree + ": InDegree = " + inDegree
+                    + ", OutDegree = " + outDegree);
+        }
+    }
 }
