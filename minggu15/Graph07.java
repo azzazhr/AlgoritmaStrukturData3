@@ -1,5 +1,7 @@
 package minggu15;
 
+import java.util.Stack;
+
 public class Graph07 {
     int vertex;
     DoubleLinkedList07 list[];
@@ -60,5 +62,32 @@ public class Graph07 {
                 System.out.println(); // Tambahkan baris baru di akhir untuk format yang rapi
             }
         }
+    }
+
+    public boolean isPathExists(int start, int end) throws Exception {
+        boolean[] visited = new boolean[vertex];
+        Stack<Integer> stack = new Stack<>();
+        stack.push(start);
+
+        while (!stack.isEmpty()) {
+            int current = stack.pop();
+
+            if (current == end) {
+                return true;
+            }
+
+            if (!visited[current]) {
+                visited[current] = true;
+
+                for (int i = 0; i < list[current].size(); i++) {
+                    int neighbor = list[current].get(i);
+                    if (!visited[neighbor]) {
+                        stack.push(neighbor);
+                    }
+                }
+            }
+        }
+
+        return false;
     }
 }
