@@ -90,4 +90,29 @@ public class Graph07 {
 
         return false;
     }
+
+    public boolean hasEdge(int asal, int tujuan) throws Exception {
+        for (int i = 0; i < list[asal].size(); i++) {
+            if (list[asal].get(i) == tujuan) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void updateJarak(int asal, int tujuan, int jarakBaru) {
+        list[asal].updateJarak(asal, tujuan, jarakBaru);
+        list[tujuan].updateJarak(asal, tujuan, jarakBaru);
+    }
+
+    public int hitungEdge() {
+        int totalEdge = 0;
+        for (int i = 0; i < vertex; i++) {
+            totalEdge += list[i].size();
+        }
+        // Karena setiap edge dihitung dua kali (sebagai hubungan antara dua node),
+        // harus membagi total edge dengan 2.
+        return totalEdge / 2;
+    }
+
 }
