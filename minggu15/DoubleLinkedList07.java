@@ -179,4 +179,19 @@ public class DoubleLinkedList07 {
             current = current.next;
         }
     }
+
+    public void updateJarak(int asal, int tujuan, int jarakBaru) {
+        Node07 current = head;
+        int index = 0;
+        while (current != null) {
+            if (current.data == asal && current.next != null && current.next.data == tujuan) {
+                addLast(asal, jarakBaru); // Corrected line
+                current.next.jarak = jarakBaru;
+                break;
+            }
+            current = current.next;
+            index++;
+        }
+    }
+
 }
