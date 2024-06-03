@@ -2,6 +2,8 @@ package minggu16;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class ListMahasiswa07 {
@@ -26,13 +28,22 @@ public class ListMahasiswa07 {
         });
     }
 
-    int LinearSearch(String nim) {
+    int linearSearch(String nim) {
         for (int i = 0; i < mahasiswas.size(); i++) {
             if (nim.equals(mahasiswas.get(i).nim)) {
                 return i;
             }
         }
         return -1;
+    }
+
+    int binarySearch(String nim) {
+        return Collections.binarySearch(mahasiswas, new Mahasiswa07(nim, null, null), new Comparator<Mahasiswa07>() {
+            @Override
+            public int compare(Mahasiswa07 o1, Mahasiswa07 o2) {
+                return o1.nim.compareTo(o2.nim);
+            }
+        });
     }
 
     public static void main(String[] args) {
@@ -43,7 +54,14 @@ public class ListMahasiswa07 {
 
         lm.tambah(m, m1, m2);
         lm.tampil();
-        lm.update(lm.LinearSearch("201235"), new Mahasiswa07("201235", "Akhleema Lela", "021xx2"));
+        System.out.println();
+        System.out.print("Menggunakan Linear Search :");
+        lm.update(lm.linearSearch("201235"), new Mahasiswa07("201235", "Akhleema Lela", "021xx2"));
+        System.out.println("");
+        lm.tampil();
+        System.out.println();
+        System.out.print("Menggunakan Binary Search : ");
+        lm.update(lm.binarySearch("201235"), new Mahasiswa07("201235", "Akhleema Lela", "021xx2"));
         System.out.println("");
         lm.tampil();
     }
