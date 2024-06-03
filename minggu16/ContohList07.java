@@ -37,4 +37,5 @@ public class ContohList07 {
                                 names.size(), names.getLast());
                 System.out.println("Names: " + names.toString());
         }
+
 }
