@@ -51,5 +51,7 @@ public class LoopCollection07 {
         while (i.hasNext()) {
             System.out.println(i.next());
         }
+
     }
+
 }
