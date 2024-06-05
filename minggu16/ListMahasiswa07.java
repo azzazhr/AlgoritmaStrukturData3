@@ -46,6 +46,24 @@ public class ListMahasiswa07 {
         });
     }
 
+    public void ascSort() {
+        Collections.sort(mahasiswas, new Comparator<Mahasiswa07>() {
+            @Override
+            public int compare(Mahasiswa07 o1, Mahasiswa07 o2) {
+                return o1.nim.compareTo(o2.nim);
+            }
+        });
+    }
+
+    public void dscSort() {
+        Collections.sort(mahasiswas, new Comparator<Mahasiswa07>() {
+            @Override
+            public int compare(Mahasiswa07 o1, Mahasiswa07 o2) {
+                return o2.nim.compareTo(o1.nim);
+            }
+        });
+    }
+
     public static void main(String[] args) {
         ListMahasiswa07 lm = new ListMahasiswa07();
         Mahasiswa07 m = new Mahasiswa07("201234", "Noureen", "021xx1");
@@ -63,6 +81,14 @@ public class ListMahasiswa07 {
         System.out.print("Menggunakan Binary Search : ");
         lm.update(lm.binarySearch("201235"), new Mahasiswa07("201235", "Akhleema Lela", "021xx2"));
         System.out.println("");
+        lm.tampil();
+        System.out.println();
+        System.out.println("Data Diurutkan Secara Ascending Collections : ");
+        lm.ascSort();
+        lm.tampil();
+        System.out.println();
+        System.out.println("Data Diurutkan Secara Descending Collections : ");
+        lm.dscSort();
         lm.tampil();
     }
 }
