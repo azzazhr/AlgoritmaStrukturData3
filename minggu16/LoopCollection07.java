@@ -1,5 +1,6 @@
 package minggu16;
 
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.Stack;
 
@@ -36,6 +37,19 @@ public class LoopCollection07 {
         System.out.println("");
         for (int i = 0; i < fruits.size(); i++) {
             System.out.printf("%s ", fruits.get(i));
+        }
+        System.out.println(" ");
+        // Menambahkan data dengan sorting
+        fruits.push("Mango");
+        fruits.push("Guava");
+        fruits.push("Avocado");
+
+        System.out.println("\nData sudah tersorting");
+        Collections.sort(fruits);
+        Iterator i = fruits.iterator();
+
+        while (i.hasNext()) {
+            System.out.println(i.next());
         }
     }
 }
