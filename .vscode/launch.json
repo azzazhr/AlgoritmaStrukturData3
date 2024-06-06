@@ -1,0 +1,98 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Nilai07",
+            "request": "launch",
+            "mainClass": "minggu16.Tugas.Nilai07",
+            "projectName": "AlgoritmaStrukturData3_ec3d49a7"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "MainAntrianPelanggan07",
+            "request": "launch",
+            "mainClass": "minggu13.MainAntrianPelanggan07",
+            "projectName": "AlgoritmaStrukturData3_ec3d49a7"
+        },
+        {
+            "type": "java",
+            "name": "BinaryTreeArrayMain07",
+            "request": "launch",
+            "mainClass": "minggu14.BinaryTreeArrayMain07",
+            "projectName": "AlgoritmaStrukturData3_ec3d49a7"
+        },
+        {
+            "type": "java",
+            "name": "BinaryTreeMain07",
+            "request": "launch",
+            "mainClass": "minggu14.BinaryTreeMain07",
+            "projectName": "AlgoritmaStrukturData3_ec3d49a7"
+        },
+        {
+            "type": "java",
+            "name": "MainBinaryTree07",
+            "request": "launch",
+            "mainClass": "minggu14.Tugas.MainBinaryTree07",
+            "projectName": "AlgoritmaStrukturData3_ec3d49a7"
+        },
+        {
+            "type": "java",
+            "name": "MainBinaryTreeArray07",
+            "request": "launch",
+            "mainClass": "minggu14.Tugas.MainBinaryTreeArray07",
+            "projectName": "AlgoritmaStrukturData3_ec3d49a7"
+        },
+        {
+            "type": "java",
+            "name": "GraphMain07",
+            "request": "launch",
+            "mainClass": "minggu15.GraphMain07",
+            "projectName": "AlgoritmaStrukturData3_ec3d49a7"
+        },
+        {
+            "type": "java",
+            "name": "GraphMatriksMain07",
+            "request": "launch",
+            "mainClass": "minggu15.GraphMatriksMain07",
+            "projectName": "AlgoritmaStrukturData3_ec3d49a7"
+        },
+        {
+            "type": "java",
+            "name": "ContohList07",
+            "request": "launch",
+            "mainClass": "minggu16.ContohList07",
+            "projectName": "AlgoritmaStrukturData3_ec3d49a7"
+        },
+        {
+            "type": "java",
+            "name": "ListMahasiswa07",
+            "request": "launch",
+            "mainClass": "minggu16.ListMahasiswa07",
+            "projectName": "AlgoritmaStrukturData3_ec3d49a7"
+        },
+        {
+            "type": "java",
+            "name": "LoopCollection07",
+            "request": "launch",
+            "mainClass": "minggu16.LoopCollection07",
+            "projectName": "AlgoritmaStrukturData3_ec3d49a7"
+        },
+        {
+            "type": "java",
+            "name": "Main07",
+            "request": "launch",
+            "mainClass": "minggu16.Tugas.Main07",
+            "projectName": "AlgoritmaStrukturData3_ec3d49a7"
+        }
+    ]
+}
